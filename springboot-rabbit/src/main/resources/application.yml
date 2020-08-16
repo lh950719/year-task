@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-boot-rabbitmq
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: 123
+    url: jdbc:mysql://192.168.0.11:3306/exercise
+    username: root
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+server:
+  port: 8777
+
